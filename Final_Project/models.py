@@ -31,12 +31,12 @@ class Karyawan(ABC):
 
 class KaryawanTetap(Karyawan):
     def catat_absensi(self, jam_masuk):
-        return f"[{self._id_karyawan}] {self._nama} (TETAP) absen pukul {jam_masuk}. Kalkulasi lembur aktif."
+        return f"[{self._id_karyawan}] {self._nama} (TETAP) absen pukul {jam_masuk}.Data Sudah Masuk"
 
 class KaryawanMagang(Karyawan):
     def catat_absensi(self, jam_masuk):
-        return f"[{self._id_karyawan}] {self._nama} (MAGANG) absen pukul {jam_masuk}. Catat jam evaluasi."
+        return f"[{self._id_karyawan}] {self._nama} (MAGANG) absen pukul {jam_masuk}.Data Sudah Masuk"
 
 class KaryawanHarian(Karyawan):
     def catat_absensi(self, jam_masuk):
-        return f"[{self._id_karyawan}] {self._nama} (HARIAN) absen pukul {jam_masuk}. Hitung upah shift."
+        return f"[{self._id_karyawan}] {self._nama} (HARIAN) absen pukul {jam_masuk}.Data Sudah Masuk"
